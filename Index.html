@@ -1,0 +1,76 @@
+<html>
+    <head>
+     <link rel="stylesheet" href="Style.css">
+    </head>
+    
+    <body style="color: gold; text-align: center; background-color: black; ">
+        <div class="main">
+           <h1>COLOR &nbsp; AND &nbsp; FONT &nbsp; PICKER</h1>
+           <div>
+            <h3>Choose Your Font Style Here</h3>
+                <br>
+                <button onclick="changeFont('Arial')" class="rod Arial">HELLO</button>
+                <button onclick="changeFont('Papyrus')" class="rod Copperplate">HELLO</button>
+                <button onclick="changeFont('Times New Roman')" class="rod Times">HELLO</button>
+                <button onclick="changeFont('Georgia')" class="rod Georgia">HELLO</button>
+                <button onclick="changeFont('Courier New')" class="rod Courier">HELLO</button>
+                <button onclick="changeFont('Verdana')" class="rod Verdana">HELLO</button>
+                <button onclick="changeFont('Tahoma')" class="rod Tahoma">HELLO</button>
+                <button onclick="changeFont('Trebuchet MS')" class="rod Trebuchet">HELLO</button>
+                <button onclick="changeFont('Impact')" class="rod Impact">HELLO</button>
+                <button onclick="changeFont('Comic Sans MS')" class="rod Comic">HELLO</button>
+            </div>
+            <div class="submain">
+                <div class="leftup">
+                <div class="left">
+                <h3>Choose Your Text Color Here</h3>
+                    <div class="rt">
+                        <button style="background-color: red;" onclick="changeTextColor('red')"></button>
+                        <button style="background-color: green;" onclick="changeTextColor('green')"></button>
+                        <button style="background-color: blue;" onclick="changeTextColor('blue')"></button>
+                        <button style="background-color: yellow;" onclick="changeTextColor('yellow')"></button>
+                        <button style="background-color: purple;" onclick="changeTextColor('purple')"></button>
+                        <button style="background-color: indigo;" onclick="changeTextColor('indigo')"></button>
+                        <button style="background-color: orange;" onclick="changeTextColor('orange')"></button>
+                        <button style="background-color: hotpink;" onclick="changeTextColor('hotpink')"></button>
+                        <button style="background-color: lime;" onclick="changeTextColor('lime')"></button>
+                        <button style="background-color: cyan;" onclick="changeTextColor('cyan')"></button>
+                        <button style="background-color: white;" onclick="changeTextColor('white')"></button>
+                    </div>
+                    <br><br>
+                    <input type="color" class="ry" id="45" oninput="chngc()">
+                </div>
+                <div><label>Font Size :- &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="number" min="20" max="50" class="xy" style="margin-top: 5px;" onchange="changeFontSize()" id="11"></div>
+                <div><label>Font Weight :- </label><input type="number" max="1000"  class="xy"style="margin-top: 5px; " oninput="changeFontWeight()" id="12" step="100"></div>
+                </div>
+                <div id="container">
+                    <h2 contenteditable="true" id="head">Type Your Quote Here</h2>       
+                </div>
+                <div class="leftup">
+                <div class="left">
+                <h3>Choose Background Color Here</h3>
+                    <div class="rt">
+                        <button style="background-color: red;" onclick="changeBackGroundColor('red')"></button>
+                        <button style="background-color: green;" onclick="changeBackGroundColor('green')"></button>
+                        <button style="background-color: blue;" onclick="changeBackGroundColor('blue')"></button>
+                        <button style="background-color: yellow;" onclick="changeBackGroundColor('yellow')"></button>
+                        <button style="background-color: purple;" onclick="changeBackGroundColor('purple')"></button>
+                        <button style="background-color: indigo;" onclick="changeBackGroundColor('indigo')"></button>
+                        <button style="background-color: orange;" onclick="changeBackGroundColor('orange')"></button>
+                        <button style="background-color: hotpink;" onclick="changeBackGroundColor('hotpink')"></button>
+                        <button style="background-color: lime;" onclick="changeBackGroundColor('lime')"></button>
+                        <button style="background-color: cyan;" onclick="changeBackGroundColor('cyan')"></button>
+                        <button style="background-color: black;" onclick="changeBackGroundColor('black')"></button>
+                    </div><br><br>
+                   <input type="color" class="ry" oninput="chngbg()" id="15">
+                </div>
+                <div><label><br>Font Style :-</label><br><select class="xy" id="13" onchange="changeFontStyle()"><option>Normal</option><option>Italic</option><option>Oblique</option></select></div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top:50px ;">
+            <input type="button" value="Download" style="width: 200px; height: 60px; background-color: black; color: gold; border-radius: 20px;font-size: 30px; font-weight: bolder; border-style: solid; border-color: goldenrod; border-width: 5px; " class="yy">
+        </div>        
+    </body>
+    <script src="Scrip.js"></script>
+</html>
