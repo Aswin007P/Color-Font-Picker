@@ -1,13 +1,14 @@
 <html>
     <head>
      <link rel="stylesheet" href="Style.css">
+     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     </head>
     
     <body style="color: gold; text-align: center; background-color: black; ">
         <div class="main">
-           <h1>COLOR &nbsp; AND &nbsp; FONT &nbsp; PICKER</h1>
+           <h1>COLOR AND FONT PICKER</h1>
            <div>
-            <h3>Choose Your Font Style Here</h3>
+            <h3 id="heading">Choose Your Font Style Here :</h3>
                 <br>
                 <button onclick="changeFont('Arial')" class="rod Arial">HELLO</button>
                 <button onclick="changeFont('Papyrus')" class="rod Copperplate">HELLO</button>
@@ -23,19 +24,19 @@
             <div class="submain">
                 <div class="leftup">
                 <div class="left">
-                <h3>Choose Your Text Color Here</h3>
+                <h3>Choose Your Text Color Here :</h3>
                     <div class="rt">
-                        <button style="background-color: red;" onclick="changeTextColor('red')"></button>
-                        <button style="background-color: green;" onclick="changeTextColor('green')"></button>
-                        <button style="background-color: blue;" onclick="changeTextColor('blue')"></button>
-                        <button style="background-color: yellow;" onclick="changeTextColor('yellow')"></button>
-                        <button style="background-color: purple;" onclick="changeTextColor('purple')"></button>
-                        <button style="background-color: indigo;" onclick="changeTextColor('indigo')"></button>
-                        <button style="background-color: orange;" onclick="changeTextColor('orange')"></button>
-                        <button style="background-color: hotpink;" onclick="changeTextColor('hotpink')"></button>
-                        <button style="background-color: lime;" onclick="changeTextColor('lime')"></button>
-                        <button style="background-color: cyan;" onclick="changeTextColor('cyan')"></button>
-                        <button style="background-color: white;" onclick="changeTextColor('white')"></button>
+                        <button class="btn" style="background-color: red;" onclick="changeTextColor('red')"></button>
+                        <button class="btn" style="background-color: green;" onclick="changeTextColor('green')"></button>
+                        <button class="btn" style="background-color: blue;" onclick="changeTextColor('blue')"></button>
+                        <button class="btn" style="background-color: yellow;" onclick="changeTextColor('yellow')"></button>
+                        <button class="btn" style="background-color: purple;" onclick="changeTextColor('purple')"></button>
+                        <button class="btn" style="background-color: indigo;" onclick="changeTextColor('indigo')"></button>
+                        <button class="btn" style="background-color: orange;" onclick="changeTextColor('orange')"></button>
+                        <button class="btn" style="background-color: hotpink;" onclick="changeTextColor('hotpink')"></button>
+                        <button class="btn" style="background-color: lime;" onclick="changeTextColor('lime')"></button>
+                        <button class="btn" style="background-color: cyan;" onclick="changeTextColor('cyan')"></button>
+                        <button class="btn" style="background-color: white;" onclick="changeTextColor('white')"></button>
                     </div>
                     <br><br>
                     <input type="color" class="ry" id="45" oninput="chngc()">
@@ -48,19 +49,19 @@
                 </div>
                 <div class="leftup">
                 <div class="left">
-                <h3>Choose Background Color Here</h3>
+                <h3>Choose Background Color Here :</h3>
                     <div class="rt">
-                        <button style="background-color: red;" onclick="changeBackGroundColor('red')"></button>
-                        <button style="background-color: green;" onclick="changeBackGroundColor('green')"></button>
-                        <button style="background-color: blue;" onclick="changeBackGroundColor('blue')"></button>
-                        <button style="background-color: yellow;" onclick="changeBackGroundColor('yellow')"></button>
-                        <button style="background-color: purple;" onclick="changeBackGroundColor('purple')"></button>
-                        <button style="background-color: indigo;" onclick="changeBackGroundColor('indigo')"></button>
-                        <button style="background-color: orange;" onclick="changeBackGroundColor('orange')"></button>
-                        <button style="background-color: hotpink;" onclick="changeBackGroundColor('hotpink')"></button>
-                        <button style="background-color: lime;" onclick="changeBackGroundColor('lime')"></button>
-                        <button style="background-color: cyan;" onclick="changeBackGroundColor('cyan')"></button>
-                        <button style="background-color: black;" onclick="changeBackGroundColor('black')"></button>
+                        <button class="btn" style="background-color: red;" onclick="changeBackGroundColor('red')"></button>
+                        <button class="btn" style="background-color: green;" onclick="changeBackGroundColor('green')"></button>
+                        <button class="btn" style="background-color: blue;" onclick="changeBackGroundColor('blue')"></button>
+                        <button class="btn" style="background-color: yellow;" onclick="changeBackGroundColor('yellow')"></button>
+                        <button class="btn" style="background-color: purple;" onclick="changeBackGroundColor('purple')"></button>
+                        <button class="btn" style="background-color: indigo;" onclick="changeBackGroundColor('indigo')"></button>
+                        <button class="btn" style="background-color: orange;" onclick="changeBackGroundColor('orange')"></button>
+                        <button class="btn" style="background-color: hotpink;" onclick="changeBackGroundColor('hotpink')"></button>
+                        <button class="btn" style="background-color: lime;" onclick="changeBackGroundColor('lime')"></button>
+                        <button class="btn" style="background-color: cyan;" onclick="changeBackGroundColor('cyan')"></button>
+                        <button class="btn" style="background-color: black;" onclick="changeBackGroundColor('black')"></button>
                     </div><br><br>
                    <input type="color" class="ry" oninput="chngbg()" id="15">
                 </div>
@@ -68,8 +69,28 @@
                 </div>
             </div>
         </div>
-        <div style="padding-top:50px ;">
-            <input type="button" value="Download" style="width: 200px; height: 60px; background-color: black; color: gold; border-radius: 20px;font-size: 30px; font-weight: bolder; border-style: solid; border-color: goldenrod; border-width: 5px; " class="yy">
+        <div style="padding-top:50px ;" id="bottom">
+            <div>
+                <h3 id="heading"> Click a Background Image : </h3> <br>
+                <div id="images">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJN8eamLXmIYb0yITB2-XbvCRCq2aQYud2w&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk5BbQM30LTNir_TKsK2On6kJd8NNRiEdJIw&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBIsoqo4DkjtUM5hMfhQN8VU7B0CBIluF7g&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI_Pqk6XaVTx1Zq8q3LqS8Xtdxbdv9_TqBGw&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQea3j5mB-u4oTjwoLBjrFXbfGG8NJ3_JIlQ&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jxKgNX9G32-Xw_x9uxMyEeH3GVlkXGBCeA&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67pDCQHC2Kanp2X28C2gQc7tK9XgIvbxIcQ&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwTy-JCCD2HvQFEd_Ce__Degb455WRZYlhwQ&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxu5-rKUVOTzrkOmsTjnF2IRomTnps2OayBg&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwkAW5hoHuDCbDdRkPP7BfaTs93IgGSA9-A&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXkgpMrRM3ntKjozpL308ZKEey8M1nRTQYw&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhw42ESJJ7bEdEuos1Y5eGE5fbTabVshcevA&s" class="images" onclick="changeBackGroundImage(this.src)">
+                   <div><div id="heading"> Choose A Background Image :</div> <div> <input type="file" id="file" accept="image/*" onchange="filed(this)"></div> </div>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Download" id="dwnld" onclick="DownloadImage()" class="yy">
+            </div>            
         </div>        
     </body>
     <script src="Scrip.js"></script>
