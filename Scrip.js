@@ -1,3 +1,4 @@
+document.querySelector('h2[contenteditable=true]').setAttribute('spellcheck', 'false');
 
         let h2=document.getElementById('head');
         let h1=document.getElementById('11');
@@ -52,9 +53,12 @@
               reader.readAsDataURL(file);
         }
         function DownloadImage(){
-            html2canvas(h2).then(canvas => {
+            html2canvas(h2, {
+                useCORS: true,
+                allowTaint: false
+            }).then(canvas => {
                 const link = document.createElement("a");
-                link.download = "my-quote.png";
+                link.download = "Status.png";
                 link.href = canvas.toDataURL("image/png");
                 link.click();
             });

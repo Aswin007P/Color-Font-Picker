@@ -11,7 +11,7 @@
             <h3 id="heading">Choose Your Font Style Here :</h3>
                 <br>
                 <button onclick="changeFont('Arial')" class="rod Arial">HELLO</button>
-                <button onclick="changeFont('Papyrus')" class="rod Copperplate">HELLO</button>
+                <button onclick="changeFont('Segoe ui')" class="rod Sergio">HELLO</button>
                 <button onclick="changeFont('Times New Roman')" class="rod Times">HELLO</button>
                 <button onclick="changeFont('Georgia')" class="rod Georgia">HELLO</button>
                 <button onclick="changeFont('Courier New')" class="rod Courier">HELLO</button>
@@ -41,8 +41,8 @@
                     <br><br>
                     <input type="color" class="ry" id="45" oninput="chngc()">
                 </div>
-                <div><label>Font Size :- &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="number" min="20" max="50" class="xy" style="margin-top: 5px;" onchange="changeFontSize()" id="11"></div>
-                <div><label>Font Weight :- </label><input type="number" max="1000"  class="xy"style="margin-top: 5px; " oninput="changeFontWeight()" id="12" step="100"></div>
+                <div><label>Font Size :- &nbsp;&nbsp;&nbsp;&nbsp;</label><input type="range" min="20" max="50"  oninput="changeFontSize()" value="20" step="1" id="11"></div>
+                <div><label>Font Weight :- </label><input type="range" max="1000" min="0"  oninput="changeFontWeight()" id="12" step="100"></div>
                 </div>
                 <div id="container">
                     <h2 contenteditable="true" id="head">Type Your Quote Here</h2>       
@@ -73,18 +73,18 @@
             <div>
                 <h3 id="heading"> Click a Background Image : </h3> <br>
                 <div id="images">
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJN8eamLXmIYb0yITB2-XbvCRCq2aQYud2w&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk5BbQM30LTNir_TKsK2On6kJd8NNRiEdJIw&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBIsoqo4DkjtUM5hMfhQN8VU7B0CBIluF7g&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI_Pqk6XaVTx1Zq8q3LqS8Xtdxbdv9_TqBGw&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQea3j5mB-u4oTjwoLBjrFXbfGG8NJ3_JIlQ&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jxKgNX9G32-Xw_x9uxMyEeH3GVlkXGBCeA&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67pDCQHC2Kanp2X28C2gQc7tK9XgIvbxIcQ&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwTy-JCCD2HvQFEd_Ce__Degb455WRZYlhwQ&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/2377965/pexels-photo-2377965.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/600114/pexels-photo-600114.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/1054201/pexels-photo-1054201.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)"> 
                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxu5-rKUVOTzrkOmsTjnF2IRomTnps2OayBg&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwkAW5hoHuDCbDdRkPP7BfaTs93IgGSA9-A&s" class="images" onclick="changeBackGroundImage(this.src)"> 
+                   <img src="https://media.istockphoto.com/id/1479180033/photo/digital-eye-ai-artificial-intelligence-digital-concept.jpg?b=1&s=612x612&w=0&k=20&c=UxZlzWi4NtKKU-kd5XI84Bp0CJxH4Fd8NLl5J4S8szw=" class="images" onclick="changeBackGroundImage(this.src)"> 
                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXkgpMrRM3ntKjozpL308ZKEey8M1nRTQYw&s" class="images" onclick="changeBackGroundImage(this.src)"> 
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhw42ESJJ7bEdEuos1Y5eGE5fbTabVshcevA&s" class="images" onclick="changeBackGroundImage(this.src)">
+                   <img src="https://images.pexels.com/photos/28920341/pexels-photo-28920341/free-photo-of-dramatic-burning-rose-reflection-in-darkness.jpeg?auto=compress&cs=tinysrgb&w=600" class="images" onclick="changeBackGroundImage(this.src)">
                    <div><div id="heading"> Choose A Background Image :</div> <div> <input type="file" id="file" accept="image/*" onchange="filed(this)"></div> </div>
                 </div>
             </div>
