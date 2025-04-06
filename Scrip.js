@@ -53,6 +53,7 @@ document.querySelector('h2[contenteditable=true]').setAttribute('spellcheck', 'f
               reader.readAsDataURL(file);
         }
         function DownloadImage(){
+            h2.style.borderStyle="none";
             html2canvas(h2, {
                 useCORS: true,
                 allowTaint: false
@@ -62,5 +63,5 @@ document.querySelector('h2[contenteditable=true]').setAttribute('spellcheck', 'f
                 link.href = canvas.toDataURL("image/png");
                 link.click();
             });
-        
+          h2.style.borderStyle="solid";
         }
