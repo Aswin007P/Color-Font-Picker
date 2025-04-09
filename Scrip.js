@@ -16,7 +16,7 @@ document.querySelector('h2[contenteditable=true]').setAttribute('spellcheck', 'f
         function changeFont(font){
             h2.style.fontFamily=font;
         }
-        function changeFontStyle(styl) {
+        function changeFontStyle() {
             h2.style.fontStyle=h3.value;
         }
         function changeFontWeight(){
@@ -24,7 +24,7 @@ document.querySelector('h2[contenteditable=true]').setAttribute('spellcheck', 'f
         }
         function changeFontSize(){
             if(h1.value<50)
-            h2.style.fontSize=h1.value;
+            h2.style.fontSize=h1.value + "px";
         }
         function chngbg(){
             h2.style.backgroundColor=h5.value;
