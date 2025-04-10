@@ -33,7 +33,7 @@
             height: 500px;
             overflow: hidden;
             width: 370px;
-            text-align: center;
+            text-align: left;
             padding: 10px;
             white-space: pre-wrap;
             word-wrap: break-word;
@@ -112,6 +112,7 @@
              border-style: solid; 
              border-color: goldenrod; 
              border-width: 5px; 
+             margin-bottom: 50px;
         }
         #dwnld:hover{scale: 1.11;}
 
