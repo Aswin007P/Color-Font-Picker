@@ -65,3 +65,4 @@ document.querySelector('h2[contenteditable=true]').setAttribute('spellcheck', 'f
             });
           h2.style.borderStyle="solid";
         }
+    

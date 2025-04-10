@@ -13,11 +13,9 @@
         }
         h1{
             font-size: 70px;
-            color: black;
-            text-decoration: underline; 
-            text-decoration-style: dashed; 
-            text-underline-offset: 10px;
-            text-shadow: 0px 0px 50px gold ;
+            color: whitesmoke;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 16px green,-3px -3px 22px gold ;
             margin-bottom: 70px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
@@ -25,22 +23,20 @@
         }
         h3{
             text-decoration: underline; 
-            text-decoration-style: wavy; 
             text-underline-offset: 5px;
             font-size: 20px;
             font-style: oblique;
             margin-bottom:20px ;
         }
-        h2{
-            border-style: solid;
-            border-width: 5px;
-            border-color: goldenrod;
+        h2 {
+            border: 5px solid goldenrod;
+            height: 500px;
+            overflow: hidden;
             width: 370px;
-            min-height: 500px;            
             text-align: center;
             padding: 10px;
-            height: fit-content;
-            text-decoration: none;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
         .rod{
             background-color: black;
@@ -78,9 +74,6 @@
         }
         h2:hover{
             box-shadow: 0px 0px 20px white;
-        }
-        h1:hover{
-            color: goldenrod;
         }
         .submain{
             padding-top: 20px;
